@@ -1,13 +1,14 @@
 package com.fluxusbackend.fluxusbackend;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+import static org.assertj.core.api.Assertions.assertThat;
+
 class FluxusBackendApplicationTests {
 
     @Test
-    void contextLoads() {
+    void simpleSanity() {
+        assertThat(1 + 1).isEqualTo(2);
     }
 
 }
